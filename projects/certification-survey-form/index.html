@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Music Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h1 id="title">Music Survey</h1>
+    <p id="description">Thank you for joining my survey about music. Please give your feedback by filling out the
+        information below.
+    <form id="survey-form">
+
+        <fieldset>
+            <label id="name-label" for="name-label">Name</label>
+            <input id="name" name="name" type="text" placeholder="Enter your name" required />
+            <label id="email-label" for="email-label">Email</label>
+            <input id="email" name="email" type="email" placeholder="Enter your email" required />
+            <label id="number-label" for="number-label">Age</label>
+            <input id="number" for="number" type="number" min="0" max="300" placeholder="Enter your age" required />
+            <label id="gender-label" for="gender">Gender</label>
+            <select id="dropdown" name="dropdown">
+                <option disabled selected value value="">Select an option</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>How often do you listen to music on a daily basis?</legend>
+            <label><input id="never" value="never" type="radio" name="music-daily" />Never</label>
+            <label><input id="once" value="once" type="radio" name="music-daily">Once</label>
+            <label><input id="2-3" value="2-3" type="radio" name="music-daily">2-3 Times</label>
+            <label><input id="4-7" value="4-7" type="radio" name="music-daily">4-7 Times</label>
+            <label><input id="8-10" value="8-10" type="radio" name="music-daily">8-10 Times</label>
+            <label><input id="constantly" value="constantly" type="radio" name="music-daily">Constantly</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>What are your favorite genres of music?</legend>
+            <label><input id="instrumental" type="checkbox" name="genre" value="instrumental">Instrumental</label>
+            <label><input id="country" type="checkbox" name="genre" value="country">Country</label>
+            <label><input id="jazz" type="checkbox" name="genre" value="jazz">Jazz</label>
+            <label><input id="radio" type="checkbox" name="radio" value="radio">What's on the radio</label>
+            <label><input id="classical" type="checkbox" name="genre" value="classical">Classical</label>
+            <label><input id="pop" type="checkbox" name="genre" value="pop">Pop</label>
+            <label><input id="rock" type="checkbox" name="genre" value="rock">Rock</label>
+            <label><input id="alternative" type="checkbox" name="genre" value="alternative">Alternative</label>
+            <label><input id="rap" type="checkbox" name="genre" value="rap">Hip-hop/Rap</label>
+            <label><input id="dubstep" type="checkbox" name="genre" value="dubstep">Dubstep</label>
+            <label><input id="reggae" type="checkbox" name="genre" value="reggae">Reggae</label>
+            <label><input id="foreign" type="checkbox" name="genre" value="foreign">Foreign</label>
+            <label><input id="foreign" type="checkbox" name="genre" value="foreign">K-pop</label>
+            <label><input id="no-preference" type="checkbox" name="genre" value="no-preference">No preference, I enjoy
+                all types</label>
+            <label><input id="other" type="checkbox" name="genre" value="other">Other</label>
+            <label><input id="no-music" type="checkbox" name="genre" value="no-music">I don't really like any
+                music</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>In what ways do you listen to music?</legend>
+            <label><input id="spotify" type="checkbox" name="genre" value="spotify">Spotify</label>
+            <label><input id="sound-cloud" type="checkbox" name="genre" value="sound-cloud">Sound Cloud</label>
+            <label><input id="i-tunes" type="checkbox" name="genre" value="i-tunes">I-tunes/Music Purchasing
+                Apps</label>
+            <label><input id="ipod" type="checkbox" name="genre" value="ipod">Ipod/MP3 Player</label>
+            <label><input id="mtv" type="checkbox" name="genre" value="mtv">MTV</label>
+            <label><input id="youtube" type="checkbox" name="genre" value="youtube">Youtube</label>
+            <label><input id="radio" type="checkbox" name="genre" value="radio">Radio</label>
+            <label><input id="heart-radio" type="checkbox" name="genre" value="heart-radio">I heart Radio</label>
+            <label><input id="pandora" type="checkbox" name="genre" value="pandora">Pandora</label>
+            <label><input id="other-web" type="checkbox" name="genre" value="other-web">Other music websites</label>
+            <label><input id="music-tv" type="checkbox" name="genre" value="music-tv">Music channels on TV</label>
+            <label><input id="cds" type="checkbox" name="genre" value="cds">CDs</label>
+            <label><input id="casettes" type="checkbox" name="genre" value="casettes">Casettes</label>
+            <label><input id="other" type="checkbox" name="genre" value="other">Other</label>
+            <label><input id="no-music" type="checkbox" name="genre" value="no-music">I don't listen to music</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Where are your favorite places to listen to music?</legend>
+            <label><input id="room" type="checkbox" name="genre" value="room">My room</label>
+            <label><input id="car" type="checkbox" name="genre" value="car">The car</label>
+            <label><input id="shower" type="checkbox" name="genre" value="shower">The shower</label>
+            <label><input id="house" type="checkbox" name="genre" value="house">Somewhere in my house</label>
+            <label><input id="restaurants" type="checkbox" name="genre" value="restaurants">Restaurants</label>
+            <label><input id="parties" type="checkbox" name="genre" value="parties">Parties</label>
+            <label><input id="friends-house" type="checkbox" name="genre" value="friends-house">Friend's House</label>
+            <label><input id="gym" type="checkbox" name="genre" value="gym">The gym</label>
+            <label><input id="anywhere-friends" type="checkbox" name="genre" value="anywhere-friends">Anywhere I'm with
+                my friends</label>
+            <label><input id="alone" type="checkbox" name="genre" value="alone">Anywhere I'm alone</label>
+            <label><input id="dannce" type="checkbox" name="genre" value="dance">Dance</label>
+            <label><input id="sports" type="checkbox" name="genre" value="sports">Sporting events/Practices</label>
+            <label><input id="no-music" type="checkbox" name="genre" value="no-music">I don't listen to music</label>
+            <label><input id="other" type="checkbox" name="genre" value="other">Other</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>What's your favorite thing about music?</legend>
+            <label><input id="rough" type="checkbox" name="genre" value="rough">It gets me through rough times</label>
+            <label><input id="happy" type="checkbox" name="genre" value="happy">It makes happy times even
+                happier!</label>
+            <label><input id="dance" type="checkbox" name="genre" value="dance">It's fun to dance too</label>
+            <label><input id="sing" type="checkbox" name="genre" value="sing">I love to sing to it!</label>
+            <label><input id="learn" type="checkbox" name="genre" value="learn">I love to learn to play it on an
+                instrument!</label>
+            <label><input id="jam" type="checkbox" name="genre" value="jam">It's so fun to jam out to in the car</label>
+            <label><input id="party" type="checkbox" name="genre" value="party">It makes parties way better</label>
+            <label><input id="hobby" type="checkbox" name="genre" value="hobby">It's a fun hobby</label>
+            <label><input id="lyrics" type="checkbox" name="genre" value="lyrics">Learning all the lyrics is so
+                fun</label>
+            <label><input id="love" type="checkbox" name="genre" value="love">I don't know, I just love it!</label>
+            <label><input id="fan" type="checkbox" name="genre" value="fan">I'm not a big fan of music</label>
+            <label><input id="inspire" type="checkbox" name="genre" value="inspire">Music inspires me to do bigger and
+                better things</label>
+            <label><input id="express" type="checkbox" name="genre" value="express">Music allows me to express
+                myself</label>
+            <label><input id="calm" type="checkbox" name="genre" value="calm">It calms me down</label>
+            <label><input id="wake" type="checkbox" name="genre" value="wake">It wakes me up</label>
+            <label><input id="other" type="checkbox" name="genre" value="other">Other</label>
+        </fieldset>
+
+        <fieldset>
+            <p>Any comments or suggestions?</p>
+            <textarea id="comments" name="comments" rows="5" cols="50"></textarea>
+        </fieldset>
+
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+    </form>
+</body>
+
+</html>
